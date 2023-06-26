@@ -18,12 +18,15 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   display: flex;
-  margin: 120px auto;
   background-color: var(--white);
   width: 550px;
   height: 400px;
@@ -31,15 +34,15 @@ body {
 }
 
 .bg-img {
-  /* display: block; */
   width: 50%;
   height: 100%;
-  background-position: center;
-  background-image: url("images/image-product-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+picture img {
+  width: 100%;
+  height: 100%;
 }
 
 .detail-box {
@@ -87,7 +90,6 @@ body {
 }
 
 .disc-price {
-  /* margin-left: 10px; */
   font-size: 0.7rem;
   font-family: "Montserrat", sans-serif;
   color: var(--dark-grayish-blue);
@@ -126,7 +128,7 @@ button img {
   .bg-img {
     width: 100%;
     height: 40%;
-    background-image: url("images/image-product-mobile.jpg");
+    /* background-image: url("images/image-product-mobile.jpg"); */
   }
 
   .detail-box {
